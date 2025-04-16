@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    dl, dt, dd {
+        color: white;
+    } h3 {
+        text-align: center;
+        color: white;
+    } h1 {
+        text-align: center;
+        color: white;
+    } h2,h4 {
+        text-align: center;
+        color: white;
+    }
+    div.polaroid {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.polar{
+    width: 300px;
+} div.picture {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.storage {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.pictures{
+    width: 300px;
+} div.polarbear {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}div.meat {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.polarbears{
+    width: 300px;
+}div.brownbear {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+div.chicken {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.brownbears{
+    width: 300px;
+}.gallery{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}.gallery > div {
+    width: calc(33.33% - 20px);
+    background-color: #905245;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}.gallery > div:nth-child(n+7) {
+    width: calc(50% - 20px);
+} img.polar, img.pictures, img.polarbears, img.brownbears, img.blackbears {
+    width: 100%;
+}div.blackbear {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.chickentenders {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.blackbears{
+    width: 300px;
+}div.phone {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Iphone {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.phones{
+    width: 300px;
+}div.phoneone {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Iphoneone {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.phonesone{
+    width: 300px;
+}div.phonetwo {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Iphonetwo {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.phonestwo{
+    width: 300px;
+}div.phonethree {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Iphonethree {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.phonesthree{
+    width: 300px;
+}div.phonefour {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Iphonefour {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.phonesfour{
+    width: 300px;
+}.gallerydos{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}.gallerydos > div {
+    width: calc(33.33% - 20px);
+    background-color: #905245;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}.gallerydos > div:nth-child(n+7) {
+    width: calc(50% - 20px);
+} img.phones, img.phonesone, img.phonestwo, img.phonesthree, img.phonesfour {
+    width: 100%;
+} div.car {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.BMW {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.cars{
+    width: 300px;
+}  div.carone {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.BMWone {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.carsone{
+    width: 300px;
+} div.cartwo {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.BMWtwo {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.carstwo{
+    width: 300px;
+} .gallerythree{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}.gallerythree > div {
+    width: calc(33.33% - 20px);
+    background-color: #905245;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}.gallerydos > div:nth-child(n+7) {
+    width: calc(50% - 20px);
+} img.phones, img.phonesone, img.phonestwo, img.phonesthree, img.phonesfour {
+    width: 100%;
+}  div.plane {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.AC130 {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.planes{
+    width: 300px;
+} .galleryfour{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}.galleryfour > div {
+    width: calc(33.33% - 20px);
+    background-color: #905245;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}.galleryfour > div:nth-child(n+7) {
+    width: calc(50% - 20px);
+} img.planes {
+    width: 100%;
+}  div.boat {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Yacht {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.boats{
+    width: 300px;
+}    div.boatone {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Yachtone {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.boatsone{
+    width: 300px;
+}   div.boattwo {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Yachttwo {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.boatstwo{
+    width: 300px;
+}   div.boatthree {
+  width: 30%;
+  background-color: #905245;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.Yachtthree {
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+}
+img.boatsthree{
+    width: 300px;
+}  .galleryfive{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}.galleryfive > div {
+    width: calc(33.33% - 20px);
+    background-color: #905245;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}.galleryfive > div:nth-child(n+7) {
+    width: calc(50% - 20px);
+} img.boats, img.boatsone, img.boatstwo, img.boatsthree {
+    width: 100%;
+}
+</style>
+<body>
+    <h3>Novels</h3>
+    <div class="gallery">
+    <div class="polaroid">
+        <img src="picture5.webp" alt="5 Terre" class="polar" >
+        <div class="container">
+            <dl>
+                <dt>Noli Me Tángere </dt>
+                    <dd>PUBLISHED IN BERLIN (1887)</dd>
+                    <dd>Jose Rizal wrote the first sections of his novel Noli Me Tangere in 1884 in Madrid, Spain when he was still studying medicine. Rizal continued with this novel in Paris, France after he finished his medicine course. Jose Rizal finished the last sections of the novel in Berlin, Germany.</dd>
+                    <p><small>Source: <a href="https://www.joserizal.com/noli-me-tangere/" target="_blank">joserizal.com</a></small></p>
+            </dl>
+        </div>
+      </div>
+
+    <div class="picture">
+        <img src="picture.jpg" class="pictures" >
+        <div class="storage">
+            <dl>
+                <dt>El Filibusterismo</dt>
+                    <dd>PUBLISHED IN October 1887</dd>
+                    <dd>The El Filibusterismo, or The Reign of Greed, is a novel that serves as a sequel to Noli Me Tangere. It was begun by our national hero, Dr. Jose Rizal, in Calamba, Laguna.
+
+                        Parts of the novel were written in Paris, Madrid, and Biarritz, and Rizal completed the entire work in 1891.</dd>
+                        <p><small>Source: <a href="https://noypi.com.ph/el-filibusterismo-summary-of-each-chapter/" target="_blank">noypi.com</a></small></p>
+            </dl>
+        </div>
+    </div>
+
+    <div class="polarbear">
+        <img src="picture6.jpg" class="polarbears" >
+        <div class="meat">
+            <dl>
+                <dt>Mi último adiós</dt>
+                    <dd>PUBLISHED IN  December 30, 1896</dd>
+                    <dd>written by the national hero of the Philippines, Dr José Rizal, in Fort Santiago on the eve of his execution by the Spanish.</dd>
+                    <p><small>Source: <a href="https://noypi.com.ph/el-filibusterismo-summary-of-each-chapter/" target="_blank">noypi.com</a></small></p>
+            </dl>
+        </div>
+    </div>
+
+    <div class="brownbear">
+        <img src="picture8.jpg" class="brownbears" >
+        <div class="chicken">
+            <dl>
+                <dt>The Indolence of the Filipino</dt>
+                    <dd>PUBLISHED IN July 15, 1890</dd>
+                    <dd> The Indolence of the Filipinos is a study of the causes why the people did not, as was said, work hard during the Spanish regime.  Rizal pointed out that long before the coming of the Spaniards, the Filipinos were industrious and hardworking.  The Spanish reign brought about a decline in economic activities.</dd>
+                    <p><small>Source: <a href="https://newsinfo.inquirer.net/1141610/did-you-know-the-indolence-of-the-filipinos" target="_blank">INQUIRER.NET</a></small></p>
+            </dl>
+        </div>
+    </div>
+
+    
+    <div class="blackbear">
+        <img src="picture9.webp" class="blackbears" >
+        <div class="chcikentenders">
+            <dl>
+                <dt>Sa mga Kababaihang Taga-Malolos ni Jose Rizal</dt>
+                    <dd>PUBLISHED IN December 12, 1888</dd>
+                    <dd> The Indolence of the Filipinos is a study of the causes why the people did not, as was said, work hard during the Spanish regime.  Rizal pointed out that long before the coming of the Spaniards, the Filipinos were industrious and hardworking.  The Spanish reign brought about a decline in economic activities.</dd>
+                    <p><small>Source: <a href="https://www.academia.edu/24642625/Sa_mga_Kababaihang_Taga_Malolos_ni_Jose_Rizal" target="_blank">ACADEMIA</a></small></p>
+            </dl>
+        </div>
+    </div>
+    </div>
+
+    <h1>Poetry</h1>
+    <div class="gallerydos">
+    <div class="phone">
+        <img src="picture7.jpg" class="phones" >
+        <div class="Iphone">
+            <dl>
+                <dt>A la juventud filipina</dt>
+                    <dd>PUBLISHED IN December 12, 1888</dd>
+                    <dd>This poem won first prize in a poetry writing contest, organized by the Liceo Artistico Literario, an organization composed of people who are interested in literature and the arts in 1879. Spaniards and natives participated in the contest but the Lupon ng Inampalang composed of Spaniards was impressed by Rizal's poem and awarded it first prize.</dd>
+                    <p><small>Source: <a href="https://www.kapitbisig.com/philippines/poems-written-by-dr-jose-rizal-a-la-juventud-filipina-ni-dr-jose-rizal_608.html" target="_blank">kapitbisig</a></small></p>
+            </dl>
+        </div>
+    </div>
+
+        <div class="phoneone">
+            <img src="picture10.png" class="phonesone" >
+            <div class="Iphoneone">
+                <dl>
+                    <dt>El Canto Del Viajero</dt>
+                        <dd>PUBLISHED IN December 29, 1903</dd>
+                        <dd>Song of the Wanderer is a poem that talks about Jose Rizal himself as a wanderer or traveler. In this poem, Rizal describes the loneliness of being a wanderer (reflecting on his return to the Philippines from Europe) and, after being away from his homeland for a long time, the heartbreak of being a stranger in the land of his birth.</dd>
+                        <p><small>Source: <a href="https://www.joserizal.com/song-of-the-wanderer/" target="_blank">joserizal.com</a></small></p>
+                </dl>
+            </div>
+        </div>
+
+            <div class="phonetwo">
+                <img src="picture11.jpg" class="phonestwo" >
+                <div class="Iphonetwo">
+                    <dl>
+                        <dt>Canto de María Clara</dt>
+                            <dd>Maria Clara is a character in Jose Rizal’s novel, the Noli Me Tangere, and this poem is part of the novel sung by the character.</dd>
+                            <p><small>Source: <a href="https://www.joserizal.com/song-of-maria-clara/" target="_blank">joserizal.com</a></small></p>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="phonethree">
+                <img src="picture12.jpg" class="phonesthree" >
+                <div class="Iphonethree">
+                    <dl>
+                        <dt>Himno Al Trabajo</dt>
+                            <dd>PUBLISHED IN January 1888</dd>
+                            <dd>Jose Rizal’s patriotism is shown in this poem “Hymn To Labor” where he urged his fellowmen to strive and work for their country whether in war or in peace.</dd>
+                            <p><small>Source: <a href="https://www.joserizal.com/hymn-to-labor/" target="_blank">joserizal.com</a></small></p>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="phonefour">
+                <img src="picture13.jpg" class="phonesfour" >
+                <div class="Iphonefour">
+                    <dl>
+                        <dt>Himno Al Trabajo</dt>
+                            <dd>PUBLISHED IN  1875</dd>
+                            <dd>“Child Jesus” was written in Spanish by Jose Rizal in 1875 at the age of 14. The poem is an octave real or a short poem with eight verses only.</dd>
+                            <p><small>Source: <a href="https://www.joserizal.com/child-jesus/" target="_blank">joserizal.com</a></small></p>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <h2>Plays</h2>
+        <div class="gallerythree">
+            <div class="car">
+                <img src="picture14.jpg" class="cars" >
+                <div class="BMW">
+                    <dl>
+                        <dt>El consejo de los dioses</dt>
+                            <dd>PUBLISHED IN April 23, 1880</dd>
+                            <dd>the Liceo Artistico Literario de Manila accepted entries for an annual writing contest to commemorate the 264th anniversary of the death of Miguel de Cervantes. For that literary competition the nineteen-year old José Rizal (1861-1986) submitted a one-act play about an unusual literary competition called El consejo de los dioses. In his play, the gods reunited in Olympus to serve as literary jurors and choose from among three writers the most deserving of immortality.</dd>
+                            <p><small>Source: <a href="https://booktrek.blogspot.com/2016/12/el-consejo-de-los-dioses.html" target="_blank">in lieu of a field guide</a></small></p>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="carone">
+                <img src="picture15.png" class="carsone" >
+                <div class="BMWone">
+                    <dl>
+                        <dt>JUNTO AL PASIG</dt>
+                            <dd>PUBLISHED IN December 8, 1880</dd>
+                            <dd>This one-act zarzuela written by Jose Rizal in 1880 depicts a debate between a young boy named Leonido and Satan over questions of faith and religion. Leonido defends his Christian faith against Satan's attempts to sway him, arguing that there is only one true God.</dd>
+                            <p><small>Source: <a href="https://www.slideshare.net/slideshow/junto-al-pasigdonep-65686160/65686160" target="_blank">slideshare</a></small></p>
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="cartwo">
+                <img src="picture16.jpg" class="carstwo" >
+                <div class="BMWtwo">
+                    <dl>
+                        <dt>Himno Al Trabajo</dt>
+                            <dd>PUBLISHED IN 1969</dd>
+                            <dd>This is an allegorical play ratherthan   a   short   story. In it, Rizal employs  various  Greek   gods   to   symbolize   differentaspects of human culture and civilization. The play is an artistic expression of his viewson Spanish colonialism and his aspirations for his homeland. It reflects a critique ofcolonial rule and a subtle promotion of Filipino identity and cultural pride.</dd>
+                            <p><small>Source: <a href="https://www.studocu.com/en-us/document/city-colleges-of-chicago/financial-accounting/p-none/78323227?utm_source=chatgpt.com" target="_blank">studoco</a></small></p>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <h4>Sculptures</h4>
+        <div class="galleryfour">
+            <div class="plane">
+                <img src="picture17.webp" class="planes" >
+                <div class="AC130">
+                    <dl>
+                        <dt>The Triumph of Science over Death</dt>
+                            <dd>PUBLISHED IN 1890</dd>
+                            <dd>"The Triumph of Science over Death" also known as "Scientia" is a clay sculpture created by José Rizal as a gift for his friend Ferdinand Blumentritt. This captivating piece features a young, nude woman with flowing hair, standing on a skull and holding a torch. The woman symbolizes humanity's ignorance during the Dark Ages, while the torch represents the enlightenment brought by science. Standing atop a skull, which signifies death, the woman embodies humanity's quest to conquer death through scientific progress.</dd>
+                            <p><small>Source: <a href="https://trek.zone/en/philippines/art/the-triumph-of-science-over-death" target="_blank">TREKZONE</a></small></p>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <h5>Paintings</h5>
+        <div class="galleryfive">
+            <div class="boat">
+                <img src="picture18.jpg" class="boats" >
+                <div class="Yacht">
+                    <dl>
+                        <dt>Saturnina Rizal in oil</dt>
+                            <dd>Material: Oil</dd>
+                            <dd>Now in Rizal Shrine in Fort Santiago</dd>
+                            <p><small>Source: <a href="https://rizalinfo.weebly.com/rizals-works.html" target="_blank">RIZAL 101</a></small></p>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="boatone">
+                <img src="picture19.webp" class="boatsone" >
+                <div class="Yachtone">
+                    <dl>
+                        <dt>Dapitan church curtains in oil</dt>
+                            <dd>Material: Oil</dd>
+                            <dd>Made in Dapitan, 1894</dd>
+                            <p><small>Source: <a href="https://rizalinfo.weebly.com/rizals-works.html" target="_blank">RIZAL 101</a></small></p>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="boattwo">
+                <img src="picture20.jpg" class="boatstwo" >
+                <div class="Yachttwo">
+                    <dl>
+                        <dt>A painting on a pair of mother-of-pearl</dt>
+                            <dd>Material: Oil</dd>
+                            <dd>Shells painted by Rizal in Dapitan and given as a gift to Doña Leonor Valenzuela and later passed into the hands of Doña Margarita Valenzuela</dd>
+                            <p><small>Source: <a href="https://rizalinfo.weebly.com/rizals-works.html" target="_blank">RIZAL 101</a></small></p>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="boatthree">
+                <img src="picture21.jpeg" class="boatsthree" >
+                <div class="Yachtthree">
+                    <dl>
+                        <dt>Christ crucified</dt>
+                            <dd>Material: Crayon</dd>
+                            <dd>Remarks: 1875</dd>
+                            <p><small>Source: <a href="https://rizalinfo.weebly.com/rizals-works.html" target="_blank">RIZAL 101</a></small></p>
+                    </dl>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
